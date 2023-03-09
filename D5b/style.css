@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+table {
+    min-height:max-content;
+    min-width:max-content;
+    border: 5px solid brown;
+    border-collapse: collapse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+table tr td {
+    width: 50px;
+    height: 50px;
+}
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+tr:nth-child(odd)>td:nth-child(even){
+    background-color: black;
+}
+tr:nth-child(even)>td:nth-child(odd){
+    background-color: black;
+}
+tr:nth-child(odd)>td:nth-child(odd){
+    background-color: #b09069;
+}
+tr:nth-child(even)>td:nth-child(even){
+    background-color: #b09069;
+}
+td:hover {
+    background-color: red !important;
+}
+tr:first-child>td>span:first-child {
+    position: relative;
+    bottom: 45px;
+    left: 20px;
+}
+tr:last-child>td>span:first-child {
+    position: relative;
+    top: 45px;
+    left: 20px;
+}
+tr>td:first-child>span:last-child {
+    position: relative;
+    top: 0px;
+    left: -30px;
+}
+tr>td:last-child>:last-child {
+    position: relative;
+    top: 0px;
+    left: 70px;
+}
+#A{
+    position: relative;
+    left: -40px;
+}
+#H {
+    position: relative;
+    left: 59px;
+}
+span {
+    pointer-events: none;
+  }
+  
